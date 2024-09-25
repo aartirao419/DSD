@@ -1,0 +1,53 @@
+# do Lab3.do
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:31:02 on Sep 25,2024
+# vlog -work work Lab3.vo 
+# -- Compiling module Lab3
+# 
+# Top level modules:
+# 	Lab3
+# End time: 18:31:02 on Sep 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:31:02 on Sep 25,2024
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module Lab3_vlg_sample_tst
+# -- Compiling module Lab3_vlg_check_tst
+# -- Compiling module Lab3_vlg_vec_tst
+# 
+# Top level modules:
+# 	Lab3_vlg_vec_tst
+# End time: 18:31:02 on Sep 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "Lab3.do" 
+# Start time: 18:31:02 on Sep 25,2024
+# Loading work.Lab3_vlg_vec_tst
+# Loading work.Lab3
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading work.Lab3_vlg_sample_tst
+# Loading work.Lab3_vlg_check_tst
+# ERROR! Vector Mismatch for output port Sa :: @time = 240000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port Sb :: @time = 240000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port Sa :: @time = 320000.000 ps
+#      Expected value = 1
+#      Real value = 0
+# ERROR! Vector Mismatch for output port Se :: @time = 320000.000 ps
+#      Expected value = 1
+#      Real value = 0
+# ERROR! Vector Mismatch for output port Sf :: @time = 320000.000 ps
+#      Expected value = 1
+#      Real value = 0
+# ERROR! Vector Mismatch for output port Sg :: @time = 320000.000 ps
+#      Expected value = 1
+#      Real value = 0
+#           6 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Waveform.vwf.vt(352)
+#    Time: 1 us  Iteration: 0  Instance: /Lab3_vlg_vec_tst/tb_out
+# End time: 18:31:03 on Sep 25,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
